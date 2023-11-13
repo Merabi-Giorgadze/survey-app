@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Product survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">survey app</h1>
+        <p id="description" class="description text-center">
+          Please help us with the social survey! To determine the social class!
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Your name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Your email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(Optional)</span></label>
+          <input type="number" name="age" id="number" min="15" max="99" class="form-control" placeholder="Age"/>
+        </div>
+        <div class="form-group">
+          <p>How often do you use social services?</p>
+          <select id="dropdown" name="frequency" class="form-control" required>
+            <option disabled selected value>Select your option</option>
+            <option value="often">Every day</option>
+            <option value="daily">Every week</option>
+            <option value="weekly">Once or twice per month</option>
+            <option value="monthly">once in three months</option>
+            <option value="rarely">Once in a while</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Which social media package do you use?</p>
+          <label>
+            <input name="purpose" value="income-increase" type="radio" class="input-radio" checked/>Disability status
+          </label>
+          <label>
+            <input name="purpose" value="process-optimization" type="radio" class="input-radio"/>The country's status as a participant in hostilities
+          </label>
+          <label>
+            <input name="purpose" value="new-customers" type="radio" class="input-radio" />The status of shepherds in the highland region
+          </label>
+          <label>
+            <input name="purpose" value="other" type="radio" class="input-radio"/>Status of living in a conflict zone
+          </label>
+          <label>
+            <input name="purpose" value="other" type="radio" class="input-radio"/>Other</label>
+        </div>
+
+        <div class="form-group">
+          <p>What qualities are most valuable to you?<span class="clue">(Check all that apply)</span>
+          </p>
+          <label>
+            <input name="feature" value="product-catalogue" type="checkbox" class="input-checkbox"/>Speed of service
+          </label>
+          <label>
+            <input name="feature" value="accounting" type="checkbox" class="input-checkbox"/>Qualified service
+          </label >
+          <label>
+            <input name="feature" value="dashboard" type="checkbox" class="input-checkbox"/>Availability
+          </label>
+          <label>
+            <input name="feature" value="reporting" type="checkbox" class="input-checkbox"
+            />Reliability
+          </label>
+          <label>
+            <input name="feature" value="messaging" type="checkbox" class="input-checkbox"/>Messaging
+          </label>
+          <label>
+            <input name="feature" value="wiki" type="checkbox" class="input-checkbox"/>versatile choice
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>What important features are we missing?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your suggestion here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
